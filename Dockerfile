@@ -3,7 +3,7 @@ FROM python:slim-buster
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get -qq update && \
-    apt-get install locales gcc krb5-user krb5-devel -y && \
+    apt-get install locales gcc krb5-user libkrb5-dev -y && \
     apt-get -qq clean
     
 RUN pip install -U pytest pytest-html requests requests-kerberos deepdiff nbconvert
