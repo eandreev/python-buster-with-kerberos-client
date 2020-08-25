@@ -11,7 +11,8 @@ RUN pip install -U \
     requests requests-kerberos \
     deepdiff \
     nbconvert==5.6.0 nbformat==4.4.0 \
-    jupyter-client ipykernel
+    jupyter-client ipykernel \
+    git
 
 RUN locale-gen "en_US.UTF-8"
 RUN echo "LC_ALL=\"en_US.UTF-8\"" >> /etc/default/locale
