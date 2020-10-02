@@ -4,7 +4,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get -qq update && \
     apt-get install locales git gcc krb5-user libkrb5-dev curl \
-    python3-dev libxml2-dev libxslt1-dev zlib1g-dev g++ \
+    python3-dev libxml2-dev libxslt1-dev zlib1g-dev libsasl2-dev g++ \
     -y && \
     apt-get -qq clean
     
