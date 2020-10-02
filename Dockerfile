@@ -13,7 +13,10 @@ RUN pip install -U \
     requests requests-kerberos \
     deepdiff \
     nbconvert==5.6.0 nbformat==4.4.0 \
-    jupyter-client ipykernel
+    jupyter-client ipykernel \
+    Jinja2 pebble pydriller matplotlib \
+    six bit_array thrift \
+    thrift_sasl sasl impyla
 
 RUN locale-gen "en_US.UTF-8"
 RUN echo "LC_ALL=\"en_US.UTF-8\"" >> /etc/default/locale
