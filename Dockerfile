@@ -11,7 +11,7 @@ RUN apt-get -qq update && \
 RUN pip install -U \
     pytest pytest-html \
     requests requests-kerberos \
-    deepdiff \
+    tqdm deepdiff \
     nbconvert==5.6.0 nbformat==4.4.0 \
     jupyter-client ipykernel \
     Jinja2 pebble pydriller matplotlib \
