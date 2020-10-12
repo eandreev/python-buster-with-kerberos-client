@@ -3,8 +3,8 @@ FROM python:slim-buster
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get -qq update && \
-    apt-get install locales git gcc krb5-user libkrb5-dev curl zip \
-    python3-dev libxml2-dev libxslt1-dev zlib1g-dev libsasl2-dev g++ \
+    apt-get install locales git gcc g++ krb5-user libkrb5-dev curl zip \
+    python3-dev libxml2-dev libxslt1-dev zlib1g-dev libsasl2-dev libjpeg-dev \
     -y && \
     apt-get -qq clean
     
