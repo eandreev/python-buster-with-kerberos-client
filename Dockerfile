@@ -10,7 +10,7 @@ RUN apt-get -qq update && \
     -y && \
     apt-get -qq clean
 
-RUN wget -q "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/darwin/amd64/kubectl" -O /usr/local/bin/kubectl \
+RUN wget -q "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl" -O /usr/local/bin/kubectl \
     && chmod +x /usr/local/bin/kubectl
     
 RUN pip install -U \
