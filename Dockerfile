@@ -9,6 +9,9 @@ RUN apt-get -qq update && \
     libsasl2-dev libjpeg-dev krb5-user libkrb5-dev \
     -y && \
     apt-get -qq clean
+
+RUN wget -q "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/darwin/amd64/kubectl" -O /usr/local/bin/kubectl \
+    && chmod +x /usr/local/bin/kubectl
     
 RUN pip install -U \
     pytest pytest-html \
