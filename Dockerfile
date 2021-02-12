@@ -4,7 +4,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get -qq update && \
     apt-get install \
-    build-essential locales git gcc g++ curl zip \
+    build-essential locales git gcc g++ curl zip wget \
     python3-dev libxml2-dev libxslt1-dev zlib1g-dev \
     libsasl2-dev libjpeg-dev krb5-user libkrb5-dev \
     -y && \
